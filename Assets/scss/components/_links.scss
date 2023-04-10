@@ -1,0 +1,44 @@
+.noDecorationLink {
+  text-decoration: none;
+}
+.linkIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  //color: $color2;
+  margin: 1%;
+  //flex-grow: 1;
+  @extend .noDecorationLink;
+  > span {
+    white-space: nowrap;
+  }
+  > img {
+    height: 100%;
+    object-fit: scale-down;
+    margin-right: 5px;
+  }
+
+  @media only screen and (max-width: $sm) {
+    height: 30px;
+    font-size: 18px;
+    width: 100%;
+
+    > img {
+      width: 20%;
+      height: 40px;
+    }
+    > span {
+      width: 80%;
+    }
+  }
+  @media only screen and (min-width: $sm) and (max-width: $md) {
+    height: 30px;
+    font-size: 15px;
+  }
+  @media only screen and (min-width: $md) {
+    height: 35px;
+    font-size: 18px;
+  }
+}

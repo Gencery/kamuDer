@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intranet</title>
+    <link rel="shortcut icon" href="./Assets/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="./Assets/fonts/izmir/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="./Assets/scss/main.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h4 class="title-h">Intranet</h4>
+
+      <div class="dynamic">
+        <div
+          class="gPagination"
+          data-itemsperpage="5"
+          data-maxnobuttons="9"
+          data-cssBtnContainer=""
+          data-cssBtnCurrentPage=""
+        >
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+          <span>11</span>
+          <span>12</span>
+          <span>13</span>
+          <span>14</span>
+          <span>15</span>
+          <span>16</span>
+          <span>17</span>
+          <span>18</span>
+          <span>19</span>
+          <span>20</span>
+          <span>21</span>
+          <span>22</span>
+          <span>23</span>
+          <span>24</span>
+          <span>25</span>
+          <span>26</span>
+          <span>27</span>
+          <span>28</span>
+          <span>29</span>
+          <span>30</span>
+          <span>31</span>
+          <span>32</span>
+          <span>33</span>
+          <span>34</span>
+          <span>35</span>
+          <span>36</span>
+          <span>37</span>
+          <span>38</span>
+          <span>39</span>
+          <span>40</span>
+          <span>41</span>
+          <span>42</span>
+          <span>43</span>
+          <span>44</span>
+          <span>45</span>
+          <span>46</span>
+          <span>47</span>
+          <span>48</span>
+          <span>49</span>
+          <span>50</span>
+          <span>51</span>
+          <span>52</span>
+          <span>53</span>
+          <span>54</span>
+          <span>55</span>
+          <span>56</span>
+          <span>57</span>
+          <span>58</span>
+          <span>59</span>
+          <span>60</span>
+          <span>61</span>
+          <span>62</span>
+          <span>63</span>
+          <span>64</span>
+          <span>65</span>
+          <span>66</span>
+          <span>67</span>
+          <span>68</span>
+          <span>69</span>
+          <span>70</span>
+          <span>71</span>
+          <span>72</span>
+          <span>73</span>
+          <span>74</span>
+          <span>75</span>
+          <span>76</span>
+          <span>77</span>
+          <span>78</span>
+          <span>79</span>
+          <span>80</span>
+          <span>81</span>
+          <span>82</span>
+          <span>83</span>
+          <span>84</span>
+          <span>85</span>
+          <span>86</span>
+          <span>87</span>
+          <span>88</span>
+        </div>
+        <div class="gPagination">
+          <div
+            class="table-regular"
+            data-itemsperpage="15"
+            data-maxnobuttons="9"
+            data-cssBtnContainer=""
+            data-cssBtnCurrentPage=""
+          >
+            <table>
+              <thead>
+                <tr>
+                  <td>
+                    <div>
+                      <input
+                        onkeyup="if(event.keyCode===13){this.closest('form').submit()}"
+                        autofocus=""
+                        type="text"
+                        name="tipadi"
+                        placeholder="Tipi"
+                        list="bba2-bilgi-guvenligi-dosyatipi"
+                      />
+                      <datalist id="bba2-bilgi-guvenligi-dosyatipi" onclick="removeduplicate()">
+                        <option>Doküman</option>
+                        <option>Form</option>
+                        <option>Gizlilik Sözleşmesi</option>
+                        <option>Liste</option>
+                        <option>Plan</option>
+                        <option>Politika</option>
+                        <option>Prosedür</option>
+                        <option>Standart</option>
+                        <option>Süreç</option>
+                        <option>Yönetim Beyanı</option>
+                      </datalist>
+                      <script>
+                        function removeduplicate() {
+                          var mycode = {};
+                          $("datalist[id='bba2-bilgi-guvenligi-dosyatipi'] > option").each(
+                            function () {
+                              if (mycode[this.text]) {
+                                $(this).remove();
+                              } else {
+                                mycode[this.text] = this.value;
+                              }
+                            }
+                          );
+                        }
+                      </script>
+                    </div>
+                  </td>
+                  <td>
+                    <div>
+                      <input
+                        onkeyup="if(event.keyCode===13){this.closest('form').submit()}"
+                        type="text"
+                        placeholder="Adı"
+                        name="belgeadi"
+                        list="bba2-bilgi-guvenligi-dosyaAdi"
+                      />
+                      <datalist id="bba2-bilgi-guvenligi-dosyaAdi">
+                        <option>Asgari Güvenlik Uygulama Standartları</option>
+                        <option>Ağ Yönetimi Dokümanı</option>
+                        <option>BGYS Kapsam Dokümanı</option>
+                        <option>BGYS Modeli</option>
+                        <option>BGYS Performans Ölçütleri Listesi</option>
+                        <option>BGYS Politikası</option>
+                        <option>BGYS Politikası Yönetim Beyanı</option>
+                        <option>Bilgi Güvenliği Politikaları</option>
+                        <option>Bilgi Güvenliği Poltikaları</option>
+                        <option>Bilgi Güvenliği Prosedürleri</option>
+                        <option>Bilgi Güvenliği Risk Yönetimi Prosedürü</option>
+                        <option>Bilgi Güvenliği Yönetim Sistemi Politikası</option>
+                        <option>Bilgi Güvenliği Yönetim Sistemi Uygulanabilirlik Beyanı</option>
+                        <option>
+                          Bilgi Güvenliği Yönlendirme Komitesi ve Çalışma Grubu Rol ve
+                          Sorumlulukları
+                        </option>
+                        <option>Bilgi Güvenliği İhlal Zayıflık Bildirim Formu</option>
+                        <option>
+                          Bilgi İşlem Dairesi Başkanlığı Organizasyonu ve Bilgi Guvenligi
+                        </option>
+                        <option>Demirbaş Düşüm İşlemleri Dokümanı</option>
+                        <option>Değişiklik Sonrası Gözden Geçirme Formu</option>
+                        <option>Değişiklik Yönetimi Formu</option>
+                        <option>Değişiklik Yönetimi Prosedürü</option>
+                        <option>Doküman Kontrol Prosedürü</option>
+                        <option>Düzeltici Faaliyet Prosedürü</option>
+                        <option>Düzeltici Faaliyet Takip Formu</option>
+                        <option>Ekipman Gönderim ve Teslimat Takip Formu</option>
+                        <option>Elektronik Erişim Yetki Kullanım Taahhütnamesi</option>
+                        <option>Gizlilik Sözleşmesi</option>
+                        <option>Görevlerin Ayrılığı Matrisi</option>
+                        <option>Kabul Edilebilir Kullanım Politikası</option>
+                        <option>Kabul Edilebilir Kullanım Politkası</option>
+                        <option>Kayıt Saklama Listesi</option>
+                        <option>Kişisel Veri Saklama ve İmha Politikasi</option>
+                        <option>Kişisel Verilerin İşlenmesi ve Korunması Politikası</option>
+                        <option>Kullanıcı Ekipmanları Teslim Kurulum ve Yönetimi Dokümanı</option>
+                        <option>Kurumsal Dosya Paylaşım Sistemi Yetkilendirme Formu</option>
+                        <option>Medya İmha Formu</option>
+                        <option>Mobil İletişim Altyapı Yönetimi Dokümanı</option>
+                        <option>Olay Yönetimi Süreci</option>
+                        <option>Olağanüstü_Durum_BT_Sürekliliği_Planı</option>
+                        <option>Ortak Kullanıcı Hesapları Takip Formu</option>
+                        <option>Periyodik Bakım Uygulamaları Dokümanı</option>
+                        <option>Planlı Çalışma Formu</option>
+                        <option>Problem Yönetimi Süreci</option>
+                        <option>Proje Yönetim Süreci</option>
+                        <option>Santral Sistemleri Yönetimi Dokümani</option>
+                        <option>Santral Sistemleri Yönetimi Dokümanı</option>
+                        <option>Servis Öncesi Donanım Teslim FOrmu</option>
+                        <option>Servis Öncesi Donanım Teslim Formu</option>
+                        <option>Sistem Uygulama&nbsp; Planlama ve Kabul Formu</option>
+                        <option>Sunucu Sistemleri Yönetimi Dokümanı</option>
+                        <option>Sunucu Talep Formu</option>
+                        <option>Sunucu Yetkilendirme Formu</option>
+                        <option>Taslak Gizlilik Sözleşmesi</option>
+                        <option>Teknik Şartname Hazırlama Dokümanı</option>
+                        <option>Telsiz Sistemi Yönetimi Dokümanı</option>
+                        <option>Toplantı Tutanağı Formu</option>
+                        <option>VPN Talep Formu</option>
+                        <option>Veri Merkezi Sistem Odası Ziyaretçi Formu</option>
+                        <option>Web Siteleri ve Mobil Uygulamalar Gizlilik Politikası</option>
+                        <option>Yazılım Analizi Uygulama Dokümanı</option>
+                        <option>Yazılım Test İşlemleri Uygulama Dokümanı</option>
+                        <option>Yedekten Geri Dönüş Testi Formu</option>
+                        <option>İç Denetim Prosedürü</option>
+                        <option>İç ve Dış Tarafların Beklentileri</option>
+                      </datalist>
+                    </div>
+                  </td>
+                  <td>
+                    <div>
+                      <input
+                        onkeyup="if(event.keyCode===13){this.closest('form').submit()}"
+                        type="text"
+                        placeholder="No"
+                        name="birimadi"
+                        list="bba2-bilgi-guvenligi-dokumanNo"
+                      />
+                      <datalist id="bba2-bilgi-guvenligi-dokumanNo">
+                        <option>IBB.BDB.S.02</option>
+                        <option>IBB.BDB.ST.01</option>
+                        <option>iBB.BDB.S.03</option>
+                        <option>İBB.BDB.D.01</option>
+                        <option>İBB.BDB.D.02</option>
+                        <option>İBB.BDB.D.03</option>
+                        <option>İBB.BDB.D.05</option>
+                        <option>İBB.BDB.D.06</option>
+                        <option>İBB.BDB.D.07</option>
+                        <option>İBB.BDB.D.08</option>
+                        <option>İBB.BDB.D.09</option>
+                        <option>İBB.BDB.D.100</option>
+                        <option>İBB.BDB.D.13</option>
+                        <option>İBB.BDB.D.14</option>
+                        <option>İBB.BDB.D.15</option>
+                        <option>İBB.BDB.D.16</option>
+                        <option>İBB.BDB.D.17</option>
+                        <option>İBB.BDB.D.18</option>
+                        <option>İBB.BDB.D.19</option>
+                        <option>İBB.BDB.D.20</option>
+                        <option>İBB.BDB.D.22</option>
+                        <option>İBB.BDB.D.25</option>
+                        <option>İBB.BDB.D.26</option>
+                        <option>İBB.BDB.F.01</option>
+                        <option>İBB.BDB.F.02</option>
+                        <option>İBB.BDB.F.03</option>
+                        <option>İBB.BDB.F.04</option>
+                        <option>İBB.BDB.F.05</option>
+                        <option>İBB.BDB.F.06</option>
+                        <option>İBB.BDB.F.07</option>
+                        <option>İBB.BDB.F.08</option>
+                        <option>İBB.BDB.F.10</option>
+                        <option>İBB.BDB.F.11</option>
+                        <option>İBB.BDB.F.12</option>
+                        <option>İBB.BDB.F.13</option>
+                        <option>İBB.BDB.F.14</option>
+                        <option>İBB.BDB.F.15</option>
+                        <option>İBB.BDB.F.23</option>
+                        <option>İBB.BDB.F.27</option>
+                        <option>İBB.BDB.F.29</option>
+                        <option>İBB.BDB.FR.029</option>
+                        <option>İBB.BDB.L.06</option>
+                        <option>İBB.BDB.L.10</option>
+                        <option>İBB.BDB.PL.01</option>
+                        <option>İBB.BDB.POL.01</option>
+                        <option>İBB.BDB.POL.02</option>
+                        <option>İBB.BDB.POL.03</option>
+                        <option>İBB.BDB.PR.01</option>
+                        <option>İBB.BDB.PR.02</option>
+                        <option>İBB.BDB.PR.03</option>
+                        <option>İBB.BDB.PR.04</option>
+                        <option>İBB.BDB.PR.05</option>
+                        <option>İBB.BDB.PR.08</option>
+                        <option>İBB.BDB.S.04</option>
+                        <option>İBB.DBD.POL.04</option>
+                        <option>İBB.DBD.POL.05</option>
+                        <option>İBB.DBD.POL.06</option>
+                        <option></option>
+                      </datalist>
+                    </div>
+                  </td>
+                  <td>
+                    <div>
+                      <input
+                        onkeyup="if(event.keyCode===13){this.closest('form').submit()}"
+                        type="text"
+                        placeholder="Tarih"
+                        name="gun"
+                        list="bba2-bilgi-guvenligi-tarih"
+                      />
+                      <datalist id="bba2-bilgi-guvenligi-tarih">
+                        <option>31.08.2018</option>
+                        <option>30.06.2020</option>
+                        <option>28.09.2018</option>
+                        <option>26.06.2020</option>
+                        <option>26.05.2021</option>
+                        <option>26.03.2018</option>
+                        <option>25.10.2018</option>
+                        <option>25.03.2021</option>
+                        <option>24.10.2018</option>
+                        <option>24.03.2020</option>
+                        <option>23.11.2018</option>
+                        <option>22.10.2018</option>
+                        <option>20.02.2019</option>
+                        <option>17.08.2020</option>
+                        <option>16.04.2020</option>
+                        <option>16.02.2021</option>
+                        <option>15.05.2019</option>
+                        <option>11.12.2018</option>
+                        <option>11.10.2018</option>
+                        <option>10.08.2020</option>
+                        <option>08.10.2018</option>
+                        <option>08.01.2021</option>
+                        <option>06.08.2018</option>
+                        <option>05.09.2018</option>
+                        <option>05.04.2021</option>
+                        <option>03.03.2020</option>
+                        <option>02.12.2021</option>
+                        <option>02.03.2020</option>
+                        <option>01.02.2019</option>
+                      </datalist>
+                    </div>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Gizlilik Sözleşmesi</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=4fecfc44-10cf-489d-90a3-f99e79151167"
+                      >Taslak Gizlilik Sözleşmesi</a
+                    >
+                  </td>
+                  <td></td>
+                  <td>06.08.2018</td>
+                </tr>
+                <tr>
+                  <td>Yönetim Beyanı</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=aa61dcbd-f6d6-4c12-a724-a2d0898ed13c"
+                      >BGYS Politikası Yönetim Beyanı</a
+                    >
+                  </td>
+                  <td>İBB.BDB.D.01</td>
+                  <td>26.03.2018</td>
+                </tr>
+                <tr>
+                  <td>Politika</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=c087329b-6843-48f5-b1a9-f294ab3b0c85"
+                      >Web Siteleri ve Mobil Uygulamalar Gizlilik Politikası</a
+                    >
+                  </td>
+                  <td>İBB.DBD.POL.05</td>
+                  <td>16.04.2020</td>
+                </tr>
+                <tr>
+                  <td>Politika</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=8b78dabc-f571-4500-b32e-4d3b3f9e8354"
+                      >Kişisel Verilerin İşlenmesi ve Korunması Politikası</a
+                    >
+                  </td>
+                  <td>İBB.DBD.POL.04</td>
+                  <td>16.04.2020</td>
+                </tr>
+                <tr>
+                  <td>Politika</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=8f199ccc-2692-4b66-8d56-ad0591a48823"
+                      >BGYS Politikası</a
+                    >
+                  </td>
+                  <td>İBB.BDB.POL.01</td>
+                  <td>05.04.2021</td>
+                </tr>
+                <tr>
+                  <td>Politika</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=70391e2f-5099-494f-ab6b-fbac8b7952c0"
+                      >Bilgi Güvenliği Poltikaları</a
+                    >
+                  </td>
+                  <td>İBB.BDB.POL.02</td>
+                  <td>25.03.2021</td>
+                </tr>
+                <tr>
+                  <td>Politika</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=44a3e804-8e32-411b-8412-26344e17442c"
+                      >Kişisel Veri Saklama ve İmha Politikasi</a
+                    >
+                  </td>
+                  <td>İBB.DBD.POL.06</td>
+                  <td>16.04.2020</td>
+                </tr>
+                <tr>
+                  <td>Politika</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=afb5bfb2-4e2e-4a70-9915-fe179a0ea385"
+                      >Kabul Edilebilir Kullanım Politikası</a
+                    >
+                  </td>
+                  <td>İBB.BDB.POL.03</td>
+                  <td>25.03.2021</td>
+                </tr>
+                <tr>
+                  <td>Prosedür</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=0ab51d64-c793-4c35-9d2c-5e22c1ed610f"
+                      >Bilgi Güvenliği Prosedürleri</a
+                    >
+                  </td>
+                  <td>İBB.BDB.PR.01</td>
+                  <td>31.08.2018</td>
+                </tr>
+                <tr>
+                  <td>Prosedür</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=51acf640-ac19-47b3-b2c0-8d73bc23f296"
+                      >Değişiklik Yönetimi Prosedürü</a
+                    >
+                  </td>
+                  <td>İBB.BDB.PR.08</td>
+                  <td>22.10.2018</td>
+                </tr>
+                <tr>
+                  <td>Politika</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=44a3e804-8e32-411b-8412-26344e17442c"
+                      >Kişisel Veri Saklama ve İmha Politikasi</a
+                    >
+                  </td>
+                  <td>İBB.DBD.POL.06</td>
+                  <td>16.04.2020</td>
+                </tr>
+                <tr>
+                  <td>Politika</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=afb5bfb2-4e2e-4a70-9915-fe179a0ea385"
+                      >Kabul Edilebilir Kullanım Politikası</a
+                    >
+                  </td>
+                  <td>İBB.BDB.POL.03</td>
+                  <td>25.03.2021</td>
+                </tr>
+                <tr>
+                  <td>Prosedür</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=0ab51d64-c793-4c35-9d2c-5e22c1ed610f"
+                      >Bilgi Güvenliği Prosedürleri</a
+                    >
+                  </td>
+                  <td>İBB.BDB.PR.01</td>
+                  <td>31.08.2018</td>
+                </tr>
+                <tr>
+                  <td>Prosedür</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=51acf640-ac19-47b3-b2c0-8d73bc23f296"
+                      >Değişiklik Yönetimi Prosedürü</a
+                    >
+                  </td>
+                  <td>İBB.BDB.PR.08</td>
+                  <td>22.10.2018</td>
+                </tr>
+                <tr>
+                  <td>Politika</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=44a3e804-8e32-411b-8412-26344e17442c"
+                      >Kişisel Veri Saklama ve İmha Politikasi</a
+                    >
+                  </td>
+                  <td>İBB.DBD.POL.06</td>
+                  <td>16.04.2020</td>
+                </tr>
+                <tr>
+                  <td>Politika</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=afb5bfb2-4e2e-4a70-9915-fe179a0ea385"
+                      >Kabul Edilebilir Kullanım Politikası</a
+                    >
+                  </td>
+                  <td>İBB.BDB.POL.03</td>
+                  <td>25.03.2021</td>
+                </tr>
+                <tr>
+                  <td>Prosedür</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=0ab51d64-c793-4c35-9d2c-5e22c1ed610f"
+                      >Bilgi Güvenliği Prosedürleri</a
+                    >
+                  </td>
+                  <td>İBB.BDB.PR.01</td>
+                  <td>31.08.2018</td>
+                </tr>
+                <tr>
+                  <td>Prosedür</td>
+                  <td>
+                    <a
+                      href="https://intratest.izbb.net/Service.ashx?dfID=51acf640-ac19-47b3-b2c0-8d73bc23f296"
+                      >Değişiklik Yönetimi Prosedürü</a
+                    >
+                  </td>
+                  <td>İBB.BDB.PR.08</td>
+                  <td>22.10.2018</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+    <script src="./Assets/scripts/main.js"></script>
+    <script></script>
+  </body>
+</html>

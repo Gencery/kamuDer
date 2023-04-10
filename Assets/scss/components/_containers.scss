@@ -1,0 +1,70 @@
+.container1 {
+  opacity: 0.8;
+  border-radius: 50px;
+  //background-color: $bg-color1;
+  margin-left: 0%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media only screen and (max-width: $sm) {
+    width: 100%;
+    height: auto;
+  }
+  @media only screen and (min-width: $sm) and (max-width: $md) {
+    width: 40vw;
+    height: 50vh;
+    height: auto;
+    font-size: 13px;
+  }
+  @media only screen and (min-width: $md) {
+    width: 40vw;
+    height: 50vh;
+    height: auto;
+    font-size: 16px;
+  }
+  > .aciklama {
+  }
+  > .basvuruLinki {
+    margin-right: 0%;
+    margin-top: 5%;
+  }
+}
+.container2 {
+  @media only screen and (max-width: $sm) {
+    width: 98%;
+    padding: 3%;
+    &-inner {
+      padding: 0%;
+    }
+  }
+  border-radius: 50px;
+  background-color: transparent;
+  width: 100%;
+  padding: 50px;
+  position: relative;
+  &-inner {
+    opacity: 1;
+    //background-color: $color2;
+    //background-image: $bg-color2;
+    border-radius: 50px;
+    padding: 50px;
+    > * {
+      margin-bottom: 50px;
+    }
+    > h4 {
+      text-align: center;
+    }
+  }
+  &-bg {
+    position: absolute;
+    //background-color: $bg-color1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    border-radius: 50px;
+  }
+}
