@@ -59,17 +59,18 @@ let days = {
 	7: "Pazar",
 };
 
-
 fetch("/header.html")
 	.then((res) => res.text())
-	.then(data => document.getElementsByTagName("header")[0].innerHTML = data);
-
+	.then(
+		(data) => (document.getElementsByTagName("header")[0].innerHTML = data)
+	);
+/*
 fetch("/footer.html")
 	.then((res) => res.text())
 	.then((data) => {
 		document.getElementsByTagName("footer")[0].innerHTML = data;
 	});
-
+*/
 
 //LOADING SCREEN
 (function createLoadingScreen() {
@@ -88,7 +89,6 @@ fetch("/footer.html")
 
 	document.body.getElementsByTagName("main")[0].appendChild(loader);
 })();
-
 
 function toggleLoadingScreenDisplay() {
 	let loadingScreen = document.getElementById("loaderContainer");
@@ -237,14 +237,10 @@ function resetFormsInside(elem) {
 	for (let form of forms) form.reset();
 }
 
-
-
 function getDateTimeLocal(offsetHours) {
 	let now = new Date().getTime() + offsetHours * 60 * 60000;
 	return new Date(now).toISOString().slice(0, 16);
 }
-
-
 
 (function gTabs() {
 	if (document.getElementsByClassName("gTabs")) {
@@ -299,10 +295,6 @@ function fillYears(optionContainer, start, end) {
 	}
 }
 
-
-
-
-
 function toggleMenu(elem) {
 	elem.classList.toggle("menuOpen");
 	let headerLinks = document.getElementsByClassName("headerLinks")[0];
@@ -315,7 +307,6 @@ function toggleMenu(elem) {
 		//elem.setAttribute("tabIndex", "0");
 	}
 }
-
 
 //POP UP
 document.addEventListener("DOMContentLoaded", () => {
