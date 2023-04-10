@@ -410,7 +410,7 @@ header > .headerLogo {
 }
 @media only screen and (max-width: 830px) {
   header > .headerLogo {
-    min-width: 98%;
+    border: 1px solid red;
   }
   header > .headerLogo .linkIcon > span {
     display: none;
@@ -424,11 +424,13 @@ header > .headerLogo > .linkIcon {
 }
 header > .headerLogo > .linkIcon > img {
   height: 95px;
+  width: 95px;
 }
 header > .headerLogo > .linkIcon > span {
   white-space: unset;
   white-space: nowrap;
   color: #f9f9f9;
+  margin-left: 10px;
 }
 header .header-hamburger {
   display: inline-block;
@@ -461,12 +463,18 @@ header > .headerLinks {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 header > .headerLinks > * {
   align-self: center;
   flex-grow: unset;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 3%;
   color: #f9f9f9;
+  flex-grow: 1;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 @media only screen and (max-width: 1281px) {
   header > .headerLinks {
