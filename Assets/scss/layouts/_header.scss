@@ -3,7 +3,7 @@ header {
 	top: 0px;
 	//position: fixed;
 	display: flex;
-	margin-bottom: 5.3vh;
+	//margin-bottom: 5.3vh;
 	align-items: center;
 	min-height: 130px;
 	background-color: $clr1;
@@ -112,6 +112,11 @@ header {
 			color: $clr6;
 			flex-grow: 1;
 			max-width: fit-content;
+			border: 2px solid transparent;
+			transition: all 500ms;
+		}
+		> *:hover {
+			border-bottom: 2px solid $clr3;
 		}
 		@media only screen and (max-width: $md) {
 			justify-content: flex-start;
@@ -125,7 +130,7 @@ header {
 			max-height: 0px;
 			> * {
 				margin-top: 3vh;
-				height: 40px;
+				//height: 40px;
 				width: 95%;
 				max-width: unset;
 				border-bottom: 1px solid $clr3;
