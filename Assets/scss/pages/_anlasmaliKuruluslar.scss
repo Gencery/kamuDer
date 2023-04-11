@@ -51,22 +51,15 @@
       }
     }
   }
-  .detay-popup {
-    > div:nth-of-type(1) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: transparent;
-      box-shadow: none;
-      width: fit-content;
+  #anlasmaliKuruluslarPopup {
+    .gPopup-inner {
+      max-width: 80vw;
       height: fit-content;
-      > img {
-        height: 90vh;
-        object-fit: contain;
+      max-height: 90vh;
+      background-color: transparent;
+      img {
+        width: 100%;
       }
-    }
-    > div:nth-of-type(2) {
-      background-color: rgba($color: #000000, $alpha: 0.5);
     }
   }
 }

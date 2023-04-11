@@ -384,24 +384,15 @@ input {
     min-height: 70vh;
   }
 }
-.anlasmaliKuruluslar .detay-popup > div:nth-of-type(1) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  box-shadow: none;
-  width: -moz-fit-content;
-  width: fit-content;
+.anlasmaliKuruluslar #anlasmaliKuruluslarPopup .gPopup-inner {
+  max-width: 80vw;
   height: -moz-fit-content;
   height: fit-content;
+  max-height: 90vh;
+  background-color: transparent;
 }
-.anlasmaliKuruluslar .detay-popup > div:nth-of-type(1) > img {
-  height: 90vh;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.anlasmaliKuruluslar .detay-popup > div:nth-of-type(2) {
-  background-color: rgba(0, 0, 0, 0.5);
+.anlasmaliKuruluslar #anlasmaliKuruluslarPopup .gPopup-inner img {
+  width: 100%;
 }
 
 .iletisim {

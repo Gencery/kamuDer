@@ -321,7 +321,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		popup.style["background-color"] = "rgba(0,0,0,0)";
 		setTimeout(() => {
 			popup.style["top"] = "-200%";
-		}, 750);
+		}, 250);
 	};
 	openPopUp = function (id) {
 		let popup = document.getElementById(id);
@@ -357,7 +357,13 @@ function createAnlasmaliKurulus(kurulus, container) {
 
 	//kurulusDiv onclick popup ac
 	kurulusDiv.addEventListener("click", () => {
-		document.getElementsByClassName('gPopup')[0].style['top'] = '0%';
+		let popup = document.getElementById("anlasmaliKuruluslarPopup");
+		let popupImg = popup.getElementsByTagName("img")[0];
+		let kurulusDivImg = kurulusDiv.getElementsByTagName("img")[0];
+
+		popupImg.setAttribute("src", kurulusDivImg.getAttribute("src"));
+
+		openPopUp("anlasmaliKuruluslarPopup");
 	})
 
 	//append Kurulus
