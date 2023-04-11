@@ -1,20 +1,19 @@
 .dynamic {
-	height: 100% !important;
-	z-index: 1;
-	position: relative;
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	border: 1px solid red;
-	@media only screen and (max-width: $sm) {
-		width: 98%;
-	}
-	@media only screen and (min-width: $sm) and (max-width: $md) {
-		width: 85%;
-	}
-	@media only screen and (min-width: $md) {
-		width: 85%;
-	}
+  height: 100% !important;
+  z-index: 1;
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: $sm) {
+    width: 98%;
+  }
+  @media only screen and (min-width: $sm) and (max-width: $md) {
+    width: 85%;
+  }
+  @media only screen and (min-width: $md) {
+    width: 85%;
+  }
 }
