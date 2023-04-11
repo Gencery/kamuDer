@@ -390,6 +390,8 @@ input {
   height: fit-content;
   max-height: 90vh;
   background-color: transparent;
+  display: flex;
+  align-items: center;
 }
 .anlasmaliKuruluslar #anlasmaliKuruluslarPopup .gPopup-inner img {
   width: 100%;

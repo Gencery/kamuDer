@@ -57,6 +57,8 @@
       height: fit-content;
       max-height: 90vh;
       background-color: transparent;
+      display: flex;
+      align-items: center;
       img {
         width: 100%;
       }
