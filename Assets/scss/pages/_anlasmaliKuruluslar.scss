@@ -1,0 +1,43 @@
+.anlasmaliKuruluslar {
+  .anlasmaliKurulusListesi {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    .anlasmaliKurulus {
+      width: 31.3%;
+      min-height: 55vh;
+      margin: 1%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      > img {
+      }
+      .title {
+        color: $clr1;
+        font-size: 24px;
+      }
+      .detay {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-image: linear-gradient(to bottom, #f0806c, #dc493a);
+        height: 7%;
+        width: 25%;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: $clr6;
+        font-size: 16px;
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media only screen and (max-width: $sm) {
+        width: 98%;
+      }
+    }
+  }
+}
