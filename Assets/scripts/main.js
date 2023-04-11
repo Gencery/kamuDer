@@ -331,3 +331,49 @@ document.addEventListener("DOMContentLoaded", () => {
 		}, 750);
 	};
 });
+
+
+function createAnlasmaliKurulus(kurulus, container) {
+	let kurulusDiv = document.createElement("div");
+	kurulusDiv.classList.add("anlasmaliKurulus");
+	kurulusDiv.classList.add("container");
+
+	//Kurulus Resim
+	let kurulusImg = document.createElement("img");
+	kurulusImg.setAttribute("src", kurulus.kurulusResimURL);
+	kurulusDiv.append(kurulusImg);
+
+	//Kurulus Adı
+	let kurulusTitle = document.createElement("h4");
+	kurulusTitle.innerText = kurulus.kurulusAdi;
+	kurulusTitle.classList.add("title");
+	kurulusDiv.append(kurulusTitle);
+
+	//Detay Button
+	let detayButton = document.createElement("span");
+	detayButton.classList.add("detay");
+	detayButton.innerText = "Detay";
+	kurulusDiv.append(detayButton)
+
+	//kurulusDiv onclick popup ac
+	kurulusDiv.addEventListener("click", () => {
+		document.getElementsByClassName('gPopup')[0].style['top'] = '0%';
+	})
+
+	//append Kurulus
+	container.append(kurulusDiv);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+	if (document.getElementsByClassName("anlasmaliKuruluslar").length > 0) {
+		fetch("/JsonData/anlasmaliKuruluslar.json")
+			.then(res => res.json())
+			.then(data => {
+				let kurulusListesiContainer = document.getElementsByClassName("anlasmaliKurulusListesi")[0];
+
+				for (let kurulus of data.kuruluslar) {
+					createAnlasmaliKurulus(kurulus, kurulusListesiContainer);
+				}
+			})
+	}
+})
