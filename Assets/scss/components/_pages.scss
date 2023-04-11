@@ -70,4 +70,50 @@
       }
     }
   }
+  .content {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: $sm) {
+      flex-direction: column;
+      > div {
+        width: 100% !important;
+        margin: 0% !important;
+        margin-top: 40px !important;
+      }
+      > div:nth-of-type(2) {
+        order: 1;
+      }
+    }
+    > div {
+      height: 30vh;
+      margin: 10px;
+      width: 25vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      > * {
+      }
+      > img {
+        width: 30%;
+      }
+      > span {
+        color: $clr1;
+        font-size: 24px;
+        font-weight: bold;
+        width: 80%;
+        text-align: center;
+      }
+    }
+    > div:nth-of-type(2) {
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-evenly;
+      > img {
+        width: 60px;
+        height: 60px;
+        margin: 0%;
+      }
+    }
+  }
 }

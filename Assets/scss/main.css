@@ -109,7 +109,7 @@ input {
   text-indent: 5%;
 }
 
-.container, .test {
+.container, .test, .linkIconColumn {
   border-radius: 10px;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to bottom, #f3f7ff, #e3ebff);
@@ -220,6 +220,52 @@ input {
     font-size: 1.75vw;
   }
 }
+.anasayfa .content {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 830px) {
+  .anasayfa .content {
+    flex-direction: column;
+  }
+  .anasayfa .content > div {
+    width: 100% !important;
+    margin: 0% !important;
+    margin-top: 40px !important;
+  }
+  .anasayfa .content > div:nth-of-type(2) {
+    order: 1;
+  }
+}
+.anasayfa .content > div {
+  height: 30vh;
+  margin: 10px;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.anasayfa .content > div > img {
+  width: 30%;
+}
+.anasayfa .content > div > span {
+  color: #4392f1;
+  font-size: 24px;
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+}
+.anasayfa .content > div:nth-of-type(2) {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.anasayfa .content > div:nth-of-type(2) > img {
+  width: 60px;
+  height: 60px;
+  margin: 0%;
+}
 
 .noDecorationLink, .linkIcon {
   text-decoration: none;
@@ -268,6 +314,13 @@ input {
     height: 45px;
     font-size: 18px;
   }
+}
+
+.linkIconColumn > img {
+  border: 1px solid red;
+}
+.linkIconColumn > span {
+  border: 1px solid red;
 }
 
 footer {
