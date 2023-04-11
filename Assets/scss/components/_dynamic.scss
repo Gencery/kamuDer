@@ -1,5 +1,4 @@
 .dynamic {
-  height: 100% !important;
   z-index: 1;
   position: relative;
   flex-grow: 1;
@@ -7,6 +6,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   @media only screen and (max-width: $sm) {
     width: 98%;
   }

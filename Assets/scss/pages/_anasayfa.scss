@@ -71,11 +71,14 @@
     }
   }
   .content {
-    margin-bottom: 10vh;
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
     margin-bottom: 5vh;
     @media only screen and (max-width: $sm) {
+      margin-top: 0vh;
+      margin-bottom: 10vh;
+
       flex-direction: column;
       > .anasayfaLink {
         width: 100% !important;
