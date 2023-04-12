@@ -392,6 +392,7 @@ input {
   background-color: transparent;
   display: flex;
   align-items: center;
+  box-shadow: none;
 }
 .anlasmaliKuruluslar #anlasmaliKuruluslarPopup .gPopup-inner img {
   width: 100%;

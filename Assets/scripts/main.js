@@ -327,7 +327,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		let popup = document.getElementById(id);
 		popup.style["top"] = "0%";
 		setTimeout(() => {
-			popup.getElementsByClassName("gPopup-exit").style["background-color"] = "rgba(0,0,0,0.75)";
+			popup.style["background-color"] = "rgba(0,0,0,0.75)";
 		}, 750);
 	};
 });
