@@ -326,8 +326,8 @@ input {
 
 @media only screen and (max-width: 830px) {
   .anasayfa .hero > .info {
-    width: 43vw;
-    height: 43vw;
+    width: 63vw;
+    height: 63vw;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -378,7 +378,7 @@ input {
 @media only screen and (max-width: 830px) {
   .anasayfa .content {
     margin-top: 0vh;
-    margin-bottom: 10vh;
+    margin-bottom: 4vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -387,7 +387,6 @@ input {
   .anasayfa .content > .anasayfaLink {
     width: 100% !important;
     margin: 0% !important;
-    margin-top: 40px !important;
   }
   .anasayfa .content > .anasayfaLink:nth-child(2) {
     -webkit-box-ordinal-group: 2;
