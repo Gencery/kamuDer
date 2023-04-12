@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intranet</title>
+    <link rel="shortcut icon" href="./Assets/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="./Assets/fonts/izmir/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="./Assets/scss/main.css" />
+  </head>
+  <body>
+    <header></header>
+    <main class="dynamic">
+      <div class="gFileInput">
+        <!--BUTTON-->
+        <span class="button-regular" onclick="gFileInput(this, null)">Resim Ekle</span>
+        <!--INPUT-->
+        <input type="file" multiple oninput="gFileInput(this, 5)" />
+        <!--CONTAINER-->
+        <div></div>
+        <!--BUTON ISMI-->
+        <p style="display: none"></p>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./Assets/scripts/main.js"></script>
+    <script>
+      function gFileInput(elem, size) {
+        let dosyaSayisi = 0;
+        //button
+        if (elem.innerText != "") {
+          let container = elem.nextElementSibling.nextElementSibling;
+
+          if (elem.classList.contains("button-danger")) {
+            elem.innerText =
+              elem.nextElementSibling.nextElementSibling.nextElementSibling.innerText;
+            while (container.children.length) container.children[0].remove();
+            elem.classList.replace("button-danger", "button-regular");
+          } else {
+            elem.nextElementSibling.click();
+          }
+        }
+        //input
+        else {
+          if (elem.files.length > size) alert("En fazla " + size + " dosya yüklenebilir");
+          let container = elem.nextElementSibling;
+          elem.previousElementSibling.setAttribute("class", "button-danger");
+          elem.nextElementSibling.nextElementSibling.innerText =
+            elem.previousElementSibling.innerText;
+          elem.previousElementSibling.innerText = "İptal";
+          for (let file of elem.files) {
+            if (dosyaSayisi == size) return;
+
+            //resimleri card yap oluştur
+            let card = document.createElement("img");
+            card.setAttribute("title", file.name);
+
+            let src = URL.createObjectURL(file);
+            card.setAttribute("src", src);
+            card.setAttribute("class", "inputCard");
+            container.append(card);
+
+            dosyaSayisi++;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

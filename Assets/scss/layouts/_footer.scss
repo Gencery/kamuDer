@@ -1,0 +1,28 @@
+footer {
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 0%;
+  //background-color: $color-footer;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  z-index: 1;
+
+  > a {
+    width: 25%;
+    > img {
+      width: 100%;
+    }
+    @media only screen and (max-width: $sm) {
+      width: 60vw;
+    }
+  }
+  > p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    width: 90%;
+  }
+}
