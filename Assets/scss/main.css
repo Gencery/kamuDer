@@ -386,7 +386,7 @@ input {
   }
   .anasayfa .content > .anasayfaLink {
     width: 100% !important;
-    margin: 0% !important;
+    margin: 0% 0% 3vh 0% !important;
   }
   .anasayfa .content > .anasayfaLink:nth-child(2) {
     -webkit-box-ordinal-group: 2;
