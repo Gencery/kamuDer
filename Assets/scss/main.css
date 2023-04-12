@@ -574,13 +574,14 @@ input {
   font-size: 30px;
 }
 
-@media only screen and (min-width: 830px) {
+@media only screen and (max-width: 830px) {
   .nasilUyeOlabilirim .innernuo {
     width: 90%;
     display: flex;
+    flex-direction: column;
   }
   .nasilUyeOlabilirim .innernuo .content {
-    width: 48%;
+    width: 100%;
     padding: 5vw 0 5vw 0;
   }
   .nasilUyeOlabilirim .innernuo .formlarIban {
@@ -589,6 +590,7 @@ input {
   .nasilUyeOlabilirim .innernuo .formlarIban .formlar {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .nasilUyeOlabilirim .innernuo .formlarIban .formlar > * {
     margin: 10px;
@@ -610,22 +612,7 @@ input {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-  }
-  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .banka {
-    border-radius: 50%;
-    width: 31.3%;
-    margin: 1%;
-    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    width: 10vw;
-    height: 10vw;
-  }
-  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .banka > img {
-    width: 40%;
-  }
-  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .banka > span {
-    font-size: 22px;
   }
   .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .vakifBank {
     background-image: linear-gradient(to bottom, #fcd70e, #f7ae06);
@@ -668,7 +655,103 @@ input {
   }
   .nasilUyeOlabilirim .innernuo .aciklama > img {
     width: 95px;
-    height: 95px;
+  }
+  .nasilUyeOlabilirim .innernuo .aciklama .p-1, .nasilUyeOlabilirim .innernuo .aciklama .yonetimKurulu .yonetimKuruluWrapper .personel > p, .yonetimKurulu .yonetimKuruluWrapper .nasilUyeOlabilirim .innernuo .aciklama .personel > p {
+    font-size: 24px;
+    text-align: center;
+  }
+  .nasilUyeOlabilirim .innernuo .aciklama .p-1:nth-of-type(2), .nasilUyeOlabilirim .innernuo .aciklama .yonetimKurulu .yonetimKuruluWrapper .personel > p:nth-of-type(2), .yonetimKurulu .yonetimKuruluWrapper .nasilUyeOlabilirim .innernuo .aciklama .personel > p:nth-of-type(2) {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 830px) and (max-width: 830px) {
+  .nasilUyeOlabilirim .innernuo .aciklama .p-1:nth-of-type(2), .nasilUyeOlabilirim .innernuo .aciklama .yonetimKurulu .yonetimKuruluWrapper .personel > p:nth-of-type(2), .yonetimKurulu .yonetimKuruluWrapper .nasilUyeOlabilirim .innernuo .aciklama .personel > p:nth-of-type(2) {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .nasilUyeOlabilirim .innernuo .aciklama .p-bold {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 830px) {
+  .nasilUyeOlabilirim .innernuo {
+    width: 90%;
+    display: flex;
+  }
+  .nasilUyeOlabilirim .innernuo .content {
+    width: 48%;
+    padding: 5vw 0 5vw 0;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban {
+    border-radius: 5px;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar {
+    display: flex;
+    flex-direction: column;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar > * {
+    margin: 10px;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .title {
+    margin: 0%;
+    padding: 5px;
+    background-color: #4392f1;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .title > span {
+    font-size: 20px;
+    color: #f9f9f9;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .vakifBank {
+    background-image: linear-gradient(to bottom, #fcd70e, #f7ae06);
+    color: #000;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .vakifBank > img {
+    color: #030303;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .vakifBank > span {
+    color: #030303;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .isBankasi {
+    border: solid 5px #4392f1;
+    background-color: #e3ebff;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .isBankasi > span {
+    color: #4392f1;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .yapiKredi {
+    background-image: linear-gradient(to bottom, #1365b7, #083580);
+    color: #f9f9f9;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .yapiKredi > span {
+    color: #f9f9f9;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .iban {
+    margin: 2vw 0 2vw 0;
+    font-size: 26px;
+    font-weight: 500px;
+    text-align: center;
+  }
+  .nasilUyeOlabilirim .innernuo .aciklama {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nasilUyeOlabilirim .innernuo .aciklama > * {
+    margin: 1rem;
+  }
+  .nasilUyeOlabilirim .innernuo .aciklama > img {
+    width: 95px;
   }
   .nasilUyeOlabilirim .innernuo .aciklama .p-1, .nasilUyeOlabilirim .innernuo .aciklama .yonetimKurulu .yonetimKuruluWrapper .personel > p, .yonetimKurulu .yonetimKuruluWrapper .nasilUyeOlabilirim .innernuo .aciklama .personel > p {
     font-size: 24px;
@@ -679,6 +762,61 @@ input {
   }
   .nasilUyeOlabilirim .innernuo .aciklama .p-bold {
     font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .banka {
+    border-radius: 50%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 10vw;
+    width: 80vw;
+    height: 80vw;
+  }
+  .banka > img {
+    width: 40%;
+  }
+  .banka > span {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 830px) and (max-width: 1281px) {
+  .banka {
+    border-radius: 50%;
+    width: 31.3%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 10vw;
+    height: 10vw;
+  }
+  .banka > img {
+    width: 40%;
+  }
+  .banka > span {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  .banka {
+    border-radius: 50%;
+    width: 31.3%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 10vw;
+    height: 10vw;
+  }
+  .banka > img {
+    width: 40%;
+  }
+  .banka > span {
+    font-size: 17px;
   }
 }
 
