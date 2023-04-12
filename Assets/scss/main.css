@@ -229,6 +229,7 @@ input {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  transition: box-shadow 500ms;
 }
 .anasayfa .hero > .info > * {
   margin-top: 10%;
@@ -276,6 +277,9 @@ input {
   .anasayfa .hero > .info > span {
     font-size: 1.75vw;
   }
+}
+.anasayfa .hero > .info:hover {
+  box-shadow: 0 0 5px 5px #dc493a;
 }
 .anasayfa .content {
   margin-top: 10vh;
@@ -451,7 +455,7 @@ input {
   }
   .baskan .baskanInner .baskanAciklama > p {
     font-size: 16px;
-    padding: 5px;
+    padding: 15px;
   }
 }
 @media only screen and (min-width: 830px) and (max-width: 1281px) {
@@ -537,6 +541,37 @@ input {
   height: 25vw;
   border-radius: 10px;
   box-shadow: 0 0 4px 2px #ddd;
+}
+
+.yonetimKurulu .yonetimKuruluWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.yonetimKurulu .yonetimKuruluWrapper .personel {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 830px) {
+  .yonetimKurulu .yonetimKuruluWrapper .personel {
+    width: 98%;
+    margin: 1%;
+  }
+}
+@media only screen and (min-width: 830px) {
+  .yonetimKurulu .yonetimKuruluWrapper .personel {
+    width: 23%;
+    margin: 1%;
+  }
+}
+.yonetimKurulu .yonetimKuruluWrapper .personel > img {
+  width: 100%;
+}
+.yonetimKurulu .yonetimKuruluWrapper .personel > p {
+  font-size: 26px;
+  text-align: center;
+}
+.yonetimKurulu .yonetimKuruluWrapper .personel .p-bold {
+  font-size: 30px;
 }
 
 footer {
@@ -705,7 +740,7 @@ header > .headerLinks > *:hover {
   }
 }
 
-.p-1 {
+.p-1, .yonetimKurulu .yonetimKuruluWrapper .personel > p {
   color: #4392f1;
 }
 

@@ -26,6 +26,7 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
+      transition: box-shadow 500ms;
 
       > * {
         margin-top: 10%;
@@ -68,6 +69,10 @@
           font-size: 1.75vw;
         }
       }
+    }
+    > .info:hover {
+      //border: 0px solid $clr1;
+      box-shadow: 0 0 5px 5px $clr5;
     }
   }
   .content {
