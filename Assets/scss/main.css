@@ -398,6 +398,81 @@ input {
   width: 100%;
 }
 
+.baskan .baskanInner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+@media only screen and (max-width: 830px) {
+  .baskan .baskanInner {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .baskan .baskanInner .baskanResim {
+    width: 100%;
+  }
+  .baskan .baskanInner .baskanResim > p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .baskan .baskanInner .baskanResim > img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 830px) and (max-width: 1281px) {
+  .baskan .baskanInner .baskanResim {
+    width: 22.8645833333vw;
+  }
+  .baskan .baskanInner .baskanResim > p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .baskan .baskanInner .baskanResim > img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  .baskan .baskanInner .baskanResim {
+    width: 22.8645833333vw;
+  }
+  .baskan .baskanInner .baskanResim > p {
+    font-size: 24px;
+    text-align: center;
+  }
+  .baskan .baskanInner .baskanResim > img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .baskan .baskanInner .baskanAciklama {
+    margin-top: 5vh;
+    width: 100%;
+  }
+  .baskan .baskanInner .baskanAciklama > p {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+@media only screen and (min-width: 830px) and (max-width: 1281px) {
+  .baskan .baskanInner .baskanAciklama {
+    width: 39.6875vw;
+  }
+  .baskan .baskanInner .baskanAciklama > p {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  .baskan .baskanInner .baskanAciklama {
+    width: 39.6875vw;
+  }
+  .baskan .baskanInner .baskanAciklama > p {
+    font-size: 24px;
+    padding: 5px;
+  }
+}
+
 .iletisim {
   display: flex;
   flex-direction: row;
