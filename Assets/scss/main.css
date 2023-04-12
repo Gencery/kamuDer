@@ -941,7 +941,7 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: 96%;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -949,6 +949,7 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 2%;
   }
   .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .vakifBank {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#fcd70e), to(#f7ae06));
@@ -1139,7 +1140,7 @@ input {
 @media only screen and (max-width: 830px) {
   .banka {
     border-radius: 50%;
-    margin: 1%;
+    margin: 10px auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1151,8 +1152,8 @@ input {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     width: 10vw;
-    width: 80vw;
-    height: 80vw;
+    width: 60vw;
+    height: 60vw;
   }
   .banka > img {
     width: 40%;

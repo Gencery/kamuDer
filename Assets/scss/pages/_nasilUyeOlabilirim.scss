@@ -31,10 +31,10 @@
 					}
 					.bankalar {
 						display: flex;
-						width: 100%;
+						width: 96%;
 						justify-content: space-evenly;
 						flex-direction: column;
-
+						margin: 2%;
 						.vakifBank {
 							background-image: linear-gradient(to bottom, #fcd70e, #f7ae06);
 							color: #000;
@@ -198,13 +198,13 @@
 .banka {
 	@media only screen and (max-width: $sm) {
 		border-radius: 50%;
-		margin: 1%;
+		margin: 10px auto;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
 		width: 10vw;
-		width: 80vw;
-		height: 80vw;
+		width: 60vw;
+		height: 60vw;
 		> img {
 			width: 40%;
 		}
