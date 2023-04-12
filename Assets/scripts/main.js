@@ -371,7 +371,7 @@ function createAnlasmaliKurulus(kurulus, container) {
 
 document.addEventListener("DOMContentLoaded", () => {
 	if (document.getElementsByClassName("anlasmaliKuruluslar").length > 0) {
-		fetch("/JsonData/anlasmaliKuruluslar.json")
+		fetch("./JsonData/anlasmaliKuruluslar.json")
 			.then((res) => res.json())
 			.then((data) => {
 				let kurulusListesiContainer = document.getElementsByClassName(
