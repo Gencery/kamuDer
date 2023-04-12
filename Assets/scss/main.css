@@ -574,6 +574,30 @@ input {
   font-size: 30px;
 }
 
+.yardimlarimiz .content {
+  width: 90%;
+}
+.yardimlarimiz .content > img {
+  max-width: 25%;
+}
+.yardimlarimiz .content > ol {
+  display: inline;
+  font-size: 18px;
+}
+.yardimlarimiz .content:nth-of-type(odd) > img {
+  float: left;
+}
+.yardimlarimiz .content:nth-of-type(even) > img {
+  float: right;
+}
+.yardimlarimiz > ol {
+  display: inline;
+}
+.yardimlarimiz .content:nth-of-type(3) {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
 @media only screen and (max-width: 830px) {
   .nasilUyeOlabilirim .innernuo {
     width: 90%;

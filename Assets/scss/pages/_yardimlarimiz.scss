@@ -1,0 +1,36 @@
+.yardimlarimiz {
+  .content {
+    width: 90%;
+    > * {
+    }
+    > .mainTitle {
+    }
+    > img {
+      max-width: 25%;
+    }
+    > ol {
+      display: inline;
+      font-size: 18px;
+    }
+  }
+  .content:nth-of-type(odd) {
+    > img {
+      float: left;
+    }
+  }
+  .content:nth-of-type(even) {
+    > img {
+      float: right;
+    }
+  }
+  > ol {
+    display: inline;
+  }
+  .content:nth-of-type(3) {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    > p {
+    }
+  }
+}
