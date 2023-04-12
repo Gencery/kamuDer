@@ -631,7 +631,7 @@ input {
     width: calc(762 / 1920 * 100vw);
   }
   .baskan .baskanInner .baskanAciklama > p {
-    font-size: 24px;
+    font-size: 18px;
     padding: 5px;
   }
 }
