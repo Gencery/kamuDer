@@ -574,6 +574,71 @@ input {
   font-size: 30px;
 }
 
+@media only screen and (min-width: 830px) {
+  .nasilUyeOlabilirim .innernuo {
+    border: 1px solid red;
+    width: 90%;
+    display: flex;
+  }
+  .nasilUyeOlabilirim .innernuo .content {
+    width: 50%;
+    border: 1px solid red;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .title {
+    margin: 0%;
+    border: 1px solid red;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .title > span {
+    background-color: #4392f1;
+    padding: 5px;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar {
+    display: flex;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .banka {
+    border-radius: 50%;
+    border: 1px solid red;
+    width: 31.3%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 10vw;
+    height: 10vw;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .banka > img {
+    width: 40%;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .banka > span {
+    color: white;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .vakifBank {
+    background-image: linear-gradient(to bottom, #fcd70e, #f7ae06);
+    color: #000;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .vakifBank > img {
+    color: #030303;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .isBankasi {
+    background-color: #e3ebff;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .isBankasi > img {
+    color: #4392f1;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .yapiKredi {
+    background-image: linear-gradient(to bottom, #1365b7, #083580);
+    color: #f9f9f9;
+  }
+  .nasilUyeOlabilirim .innernuo .formlarIban .formlar .bankalar .yapiKredi > img {
+    color: #f9f9f9;
+  }
+}
+
 footer {
   width: 100%;
   min-height: 150px;

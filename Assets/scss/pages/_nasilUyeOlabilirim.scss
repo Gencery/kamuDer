@@ -1,0 +1,70 @@
+.nasilUyeOlabilirim {
+  @media only screen and (max-width: $sm) {
+  }
+  @media only screen and (min-width: $sm) {
+    .innernuo {
+      border: 1px solid red;
+      width: 90%;
+      display: flex;
+      .content {
+        width: 50%;
+        border: 1px solid red;
+      }
+      .formlarIban {
+        .formlar {
+          border: 1px solid red;
+          display: flex;
+          flex-direction: column;
+          .title {
+            margin: 0%;
+            border: 1px solid red;
+            > span {
+              background-color: $clr1;
+              padding: 5px;
+            }
+          }
+          .bankalar {
+            display: flex;
+            .banka {
+              border-radius: 50%;
+              border: 1px solid red;
+              width: 31.3%;
+              margin: 1%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              width: 10vw;
+              height: 10vw;
+              > img {
+                width: 40%;
+              }
+              > span {
+                color: white;
+              }
+            }
+            .vakifBank {
+              background-image: linear-gradient(to bottom, #fcd70e, #f7ae06);
+              color: #000;
+              > img {
+                color: #030303;
+              }
+            }
+            .isBankasi {
+              background-color: $clr3;
+              > img {
+                color: $clr1;
+              }
+            }
+            .yapiKredi {
+              background-image: linear-gradient(to bottom, #1365b7, #083580);
+              color: $clr6;
+              > img {
+                color: $clr6;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
