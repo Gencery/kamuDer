@@ -83,7 +83,7 @@ fetch("/footer.html")
 	innerLoader.classList.add("loader");
 	//LOGO
 	let logoLoader = document.createElement("img");
-	logoLoader.setAttribute("src", "./Assets/img/loader3.png");
+	logoLoader.setAttribute("src", "./Assets/img/kamuderLogo.png");
 	loader.appendChild(logoLoader);
 	logoLoader.classList.add("logoLoader");
 
