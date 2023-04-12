@@ -129,7 +129,7 @@ input {
   text-indent: 5%;
 }
 
-.container, .linkIconColumn, .test {
+.container, .linkIconColumn, .yonetimKurulu .yonetimKuruluWrapper .personel, .test {
   border-radius: 10px;
   -webkit-box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
@@ -790,8 +790,8 @@ input {
 
 @media only screen and (max-width: 830px) {
   .yonetimKurulu .yonetimKuruluWrapper .personel {
-    width: 98%;
-    margin: 1%;
+    width: 94%;
+    margin: 5vh 3% 5vh 3%;
   }
 }
 
