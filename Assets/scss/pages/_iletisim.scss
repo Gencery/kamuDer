@@ -34,7 +34,8 @@
     order: 1;
     margin-bottom: 5vh;
     //@extend .container;
-
+    .span-p {
+    }
     * {
       font-size: 26px;
       color: $clr1;
@@ -42,9 +43,18 @@
         min-width: 150px;
         text-align: right;
       }
-      > .p-2 {
+      > .p-1:not(.p-bold) {
         text-transform: capitalize;
+        word-break: keep-all !important;
         //word-break: break-all;
+        > a {
+          word-break: keep-all !important;
+        }
+      }
+      > a {
+        //margin-left: 1%;
+        text-transform: lowercase !important;
+        font-size: 26px !important;
       }
     }
 
@@ -52,6 +62,11 @@
       .span-p {
         flex-direction: column;
         > .p-bold {
+        }
+        > .p-1 {
+          > a {
+            font-size: 18px !important;
+          }
         }
       }
     }

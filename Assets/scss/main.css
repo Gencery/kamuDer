@@ -518,12 +518,23 @@ input {
   min-width: 150px;
   text-align: right;
 }
-.iletisim .content:nth-of-type(1) * > .p-2 {
+.iletisim .content:nth-of-type(1) * > .p-1:not(.p-bold), .iletisim .content:nth-of-type(1) .yonetimKurulu .yonetimKuruluWrapper .personel > p:not(.p-bold), .yonetimKurulu .yonetimKuruluWrapper .iletisim .content:nth-of-type(1) .personel > p:not(.p-bold) {
   text-transform: capitalize;
+  word-break: keep-all !important;
+}
+.iletisim .content:nth-of-type(1) * > .p-1:not(.p-bold) > a, .iletisim .content:nth-of-type(1) .yonetimKurulu .yonetimKuruluWrapper .personel > p:not(.p-bold) > a, .yonetimKurulu .yonetimKuruluWrapper .iletisim .content:nth-of-type(1) .personel > p:not(.p-bold) > a {
+  word-break: keep-all !important;
+}
+.iletisim .content:nth-of-type(1) * > a {
+  text-transform: lowercase !important;
+  font-size: 26px !important;
 }
 @media only screen and (max-width: 830px) {
   .iletisim .content:nth-of-type(1) .span-p {
     flex-direction: column;
+  }
+  .iletisim .content:nth-of-type(1) .span-p > .p-1 > a, .iletisim .content:nth-of-type(1) .yonetimKurulu .yonetimKuruluWrapper .personel.span-p > p > a, .yonetimKurulu .yonetimKuruluWrapper .iletisim .content:nth-of-type(1) .personel.span-p > p > a {
+    font-size: 18px !important;
   }
 }
 .iletisim .content:nth-of-type(2) {
