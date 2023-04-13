@@ -384,3 +384,22 @@ document.addEventListener("DOMContentLoaded", () => {
 			});
 	}
 });
+
+
+//banka dokumanlar indirme
+document.addEventListener("DOMContentLoaded", () => {
+	if (document.getElementsByClassName("nasilUyeOlabilirim").length > 0) {
+		let bankaButtons = document.getElementsByClassName("banka");
+
+		for (let bankaButton of bankaButtons) {
+
+			bankaButton.addEventListener("click", (event) => {
+
+				for (let link of bankaButton.getElementsByTagName("a")) {
+
+					window.open(link.getAttribute("href"));
+				}
+			})
+		}
+	}
+})
